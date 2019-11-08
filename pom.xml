@@ -17,6 +17,7 @@
     <modules>
         <module>demo-mature-dependencies</module>
         <module>demo-mature-provider</module>
+        <module>demo-mature-consumer</module>
     </modules>
 
     <dependencyManagement>

@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-mature-provider" />
+        <module name="demo-mature-consumer" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-mature-consumer" options="-parameters" />
       <module name="demo-mature-provider" options="-parameters" />
     </option>
   </component>
