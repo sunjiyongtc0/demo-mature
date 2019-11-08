@@ -16,6 +16,7 @@
 
     <modules>
         <module>demo-mature-dependencies</module>
+        <module>demo-mature-provider</module>
     </modules>
 
     <dependencyManagement>
