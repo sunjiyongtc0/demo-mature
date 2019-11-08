@@ -18,6 +18,7 @@
         <module>demo-mature-dependencies</module>
         <module>demo-mature-provider</module>
         <module>demo-mature-consumer</module>
+        <module>demo-mature-nacosconfig</module>
     </modules>
 
     <dependencyManagement>

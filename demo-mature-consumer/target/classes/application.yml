@@ -5,6 +5,10 @@ spring:
     nacos:
       discovery:
         server-addr: 39.105.145.184:8848
+    sentinel:
+      transport:
+        dashboard: 39.105.145.184:8080
+
 server:
   port: 7070
 management:

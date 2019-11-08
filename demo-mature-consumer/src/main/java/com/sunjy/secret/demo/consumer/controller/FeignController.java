@@ -10,8 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class FeignController {
     @Autowired
     private EchoService echoService;
+
     @GetMapping("/getfecho/{s}")
     public String echo(@PathVariable("s") String str){
         return echoService.echo(str);
+    }
+
+    @GetMapping("/getflb")
+    public String flb(){
+        return echoService.lb();
     }
 }

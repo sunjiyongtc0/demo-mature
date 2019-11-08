@@ -10,7 +10,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>demo-mature-consumer</artifactId>
+    <artifactId>demo-mature-nacosconfig</artifactId>
     <packaging>jar</packaging>
     <!--  spring boot begin -->
     <dependencies>
@@ -40,10 +40,17 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+        <!--  nacos-config编写配置 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!-- sentinel哨兵防雪崩服务(熔断限流) -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
+
         <!--    spring cloud end  -->
     </dependencies>
     <build>
@@ -53,7 +60,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>
-                        com.sunjy.secret.demo.consumer.ConsumerApplication
+                        com.sunjy.secret.demo.nacos.NacoConfApplication
                     </mainClass>
                 </configuration>
             </plugin>
