@@ -7,7 +7,7 @@ spring:
         server-addr: 39.105.145.184:8848
     sentinel:
       transport:
-        dashboard: 39.105.145.184:8080
+        dashboard: 39.105.145.184:8888
 
 server:
   port: 7070

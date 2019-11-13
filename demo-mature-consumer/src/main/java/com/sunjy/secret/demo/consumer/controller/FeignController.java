@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FeignController {
     @Autowired
-    private EchoService echoService;
+    private EchoService es;
 
     @GetMapping("/getfecho/{s}")
     public String echo(@PathVariable("s") String str){
-        return echoService.echo(str);
+        return es.echo(str);
     }
 
     @GetMapping("/getflb")
     public String flb(){
-        return echoService.lb();
+        return es.lb();
     }
 }
